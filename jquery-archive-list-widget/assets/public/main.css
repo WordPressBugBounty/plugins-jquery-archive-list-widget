@@ -1,10 +1,9 @@
-/*!***************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
-  \***************************************************************************************************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/editor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
 @charset "UTF-8";
 /**
- * The following styles get applied both on the front of your site
- * and in the editor.
+ * The following styles get applied inside the editor only.
  *
  * Replace them with your own styles or remove the file completely.
  */
@@ -19,9 +18,11 @@
   vertical-align: middle;
   width: 25px;
 }
+
 .jal-hide {
   display: none;
 }
+
 .widget_jaw_widget ul.jaw_widget,
 ul.jaw_widget ul,
 body .wp-block-js-archive-list-archive-widget ul.jaw_widget,
@@ -31,6 +32,7 @@ body ul.jaw_widget {
   margin-left: 0;
   padding-left: 0;
 }
+
 .widget_jaw_widget ul.jaw_widget li,
 .wp-block-js-archive-list-archive-widget ul.jaw_widget li,
 .jaw_widget ul li {
@@ -42,20 +44,25 @@ body ul.jaw_widget {
 .jaw_widget ul li::before {
   content: "";
 }
+.widget_jaw_widget ul.jaw_widget li .post-date,
+.wp-block-js-archive-list-archive-widget ul.jaw_widget li .post-date,
+.jaw_widget ul li .post-date {
+  padding-left: 5px;
+}
 .widget_jaw_widget ul.jaw_widget li .post-date::before,
 .wp-block-js-archive-list-archive-widget ul.jaw_widget li .post-date::before,
 .jaw_widget ul li .post-date::before {
   content: "—";
   padding-right: 5px;
 }
-.widget_jaw_widget ul.jaw_widget li .post-date,
-.wp-block-js-archive-list-archive-widget ul.jaw_widget li .post-date,
-.jaw_widget ul li .post-date {
-  padding-left: 5px;
-}
+
 /** Bullet's padding **/
 .jaw_symbol {
   margin-right: 0.5rem;
 }
 
-/*# sourceMappingURL=style-index.css.map*/
+.jalw-controls .components-base-control {
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map*/

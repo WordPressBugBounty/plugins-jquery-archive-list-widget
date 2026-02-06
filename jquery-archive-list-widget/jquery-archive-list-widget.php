@@ -3,13 +3,13 @@
   Plugin Name: JS Archive List
   Plugin URI: http://skatox.com/blog/jquery-archive-list-widget/
   Description: A widget for displaying an archive list with some effects.
-  Version: 6.1.6
+  Version: 6.1.7
   Author: Miguel Angel Useche Castro
   Author URI: https://migueluseche.com/
   Text Domain: jalw_i18n
   Domain Path: /languages
   License: GPL2
-  Copyleft 2009-2024  Miguel Angel Useche Castro (email : migueluseche@skatox.com)
+  Copyleft 2009-2026  Miguel Angel Useche Castro (email : migueluseche@skatox.com)
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -35,7 +35,7 @@ if ( ! defined( 'JAL_BASE_URL' ) ) {
 	define( 'JAL_BASE_URL', plugin_dir_url( __FILE__ ) );
 }
 if ( ! defined( 'JAL_VERSION' ) ) {
-	define( 'JAL_VERSION', '6.1.6' );
+	define( 'JAL_VERSION', '6.1.7' );
 }
 
 require_once( 'admin/class-jaw-walker-category-checklist.php' );

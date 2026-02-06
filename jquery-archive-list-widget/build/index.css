@@ -18,11 +18,9 @@
   vertical-align: middle;
   width: 25px;
 }
-
 .jal-hide {
   display: none;
 }
-
 .widget_jaw_widget ul.jaw_widget,
 ul.jaw_widget ul,
 body .wp-block-js-archive-list-archive-widget ul.jaw_widget,
@@ -32,7 +30,6 @@ body ul.jaw_widget {
   margin-left: 0;
   padding-left: 0;
 }
-
 .widget_jaw_widget ul.jaw_widget li,
 .wp-block-js-archive-list-archive-widget ul.jaw_widget li,
 .jaw_widget ul li {
@@ -44,23 +41,21 @@ body ul.jaw_widget {
 .jaw_widget ul li::before {
   content: "";
 }
-.widget_jaw_widget ul.jaw_widget li .post-date,
-.wp-block-js-archive-list-archive-widget ul.jaw_widget li .post-date,
-.jaw_widget ul li .post-date {
-  padding-left: 5px;
-}
 .widget_jaw_widget ul.jaw_widget li .post-date::before,
 .wp-block-js-archive-list-archive-widget ul.jaw_widget li .post-date::before,
 .jaw_widget ul li .post-date::before {
   content: "—";
   padding-right: 5px;
 }
-
+.widget_jaw_widget ul.jaw_widget li .post-date,
+.wp-block-js-archive-list-archive-widget ul.jaw_widget li .post-date,
+.jaw_widget ul li .post-date {
+  padding-left: 5px;
+}
 /** Bullet's padding **/
 .jaw_symbol {
   margin-right: 0.5rem;
 }
-
 .jalw-controls .components-base-control {
   width: 100%;
 }
