@@ -129,7 +129,7 @@ class JQ_Archive_List_DataSource {
             $prepare_args[] = $month;
         }
         if ($this->has_included_categories()) {
-            $ids = is_array($this->config['included']) ? $this->config['included'] : explode(',', $this->config['included']);
+            $ids = is_array($this->config['included']) ? $this->config['included'] : explode(',', (string)$this->config['included']);
             $ids = array_values(array_filter(array_map('intval', $ids), static function ($id) {
                 return $id > 0;
             }));
@@ -142,7 +142,7 @@ class JQ_Archive_List_DataSource {
         }
 
         if ($this->has_excluded_categories()) {
-            $ids = is_array($this->config['excluded']) ? $this->config['excluded'] : explode(',', $this->config['excluded']);
+            $ids = is_array($this->config['excluded']) ? $this->config['excluded'] : explode(',', (string)$this->config['excluded']);
             $ids = array_values(array_filter(array_map('intval', $ids), static function ($id) {
                 return $id > 0;
             }));
@@ -168,7 +168,7 @@ class JQ_Archive_List_DataSource {
         if ($this->only_show_cur_category()) {
             $query_cat = get_query_var('cat');
             $categories_ids = empty($query_cat) ? $this->config['onlycategory'] : $query_cat;
-            $categories_ids = is_array($categories_ids) ? $categories_ids : explode(',', $categories_ids);
+            $categories_ids = is_array($categories_ids) ? $categories_ids : explode(',', (string)$categories_ids);
             $categories_ids = array_map('intval', $categories_ids);
             if (($this->legacy && is_category()) || !$this->legacy) {
                 $placeholders = implode(', ', array_fill(0, count($categories_ids), '%d'));
