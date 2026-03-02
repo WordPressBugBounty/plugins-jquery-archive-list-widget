@@ -40,7 +40,7 @@ const CategoryPicker = ({
     }]);
   });
   if (isLoading) {
-    return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Loading categories…', 'jalw_i18n'));
+    return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Loading categories…', 'jquery-archive-list-widget'));
   }
   if (categories === null) {
     return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "No categories found");
@@ -143,14 +143,14 @@ const JsArchiveList = () => {
     className: "js-archive-list dynamic"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", null, config.title), loading ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_Loading__WEBPACK_IMPORTED_MODULE_7__["default"], {
     loading: loading
-  }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Loading…', 'jalw')) : '', apiData && apiData.years ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("ul", {
+  }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Loading…', 'jquery-archive-list-widget')) : '', apiData && apiData.years ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("ul", {
     className: "jaw_widget"
-  }, yearsToShow.current.length === 0 ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('There are no post to show.', 'jalw')) : yearsToShow.current.map(yearObj => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_displayers_DisplayYear__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, yearsToShow.current.length === 0 ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('There are no post to show.', 'jquery-archive-list-widget')) : yearsToShow.current.map(yearObj => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_displayers_DisplayYear__WEBPACK_IMPORTED_MODULE_3__["default"], {
     key: yearObj.year,
     yearObj: yearObj
   })), yearsToShow.olders.length > 0 ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_ShowOlderYears__WEBPACK_IMPORTED_MODULE_5__["default"], {
     years: yearsToShow.olders
-  }) : '') : '', (loaded || error) && !apiData ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Cannot load posts.', 'jalw') : '');
+  }) : '') : '', (loaded || error) && !apiData ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Cannot load posts.', 'jquery-archive-list-widget') : '');
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (JsArchiveList);
 
@@ -1012,23 +1012,23 @@ function Edit({
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "jalw-controls"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Panel, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("General options", "jalw"),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("General options", "jquery-archive-list-widget"),
     initialOpen: true
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Title", "jalw"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Title", "jquery-archive-list-widget"),
     value: attributes.title,
     onChange: val => setAttributes({
       title: val
     })
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Trigger Symbol", "jalw"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Trigger Symbol", "jquery-archive-list-widget"),
     value: attributes.symbol,
     onChange: val => setAttributes({
       symbol: val
     }),
     options: [{
       value: "0",
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Empty Space", "jalw")
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Empty Space", "jquery-archive-list-widget")
     }, {
       value: "1",
       label: "► ▼"
@@ -1040,159 +1040,159 @@ function Edit({
       label: "[+] [–]"
     }]
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Effect", "jalw"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Effect", "jquery-archive-list-widget"),
     value: attributes.effect,
     onChange: val => setAttributes({
       effect: val
     }),
     options: [{
       value: "none",
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("None", "jalw")
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("None", "jquery-archive-list-widget")
     }, {
       value: "slide",
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Slide( Accordion )", "jalw")
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Slide( Accordion )", "jquery-archive-list-widget")
     }, {
       value: "fade",
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Fade", "jalw")
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Fade", "jquery-archive-list-widget")
     }]
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Month Format", "jalw"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Month Format", "jquery-archive-list-widget"),
     value: attributes.month_format,
     onChange: val => setAttributes({
       month_format: val
     }),
     options: [{
       value: "full",
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Full Name( January )", "jalw")
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Full Name( January )", "jquery-archive-list-widget")
     }, {
       value: "short",
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Short Name( Jan )", "jalw")
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Short Name( Jan )", "jquery-archive-list-widget")
     }, {
       value: "number",
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Number( 01 )", "jalw")
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Number( 01 )", "jquery-archive-list-widget")
     }]
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Expand", "jalw"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Expand", "jquery-archive-list-widget"),
     value: attributes.expand,
     onChange: val => setAttributes({
       expand: val
     }),
     options: [{
       value: "",
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("None", "jalw")
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("None", "jquery-archive-list-widget")
     }, {
       value: "all",
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("All", "jalw")
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("All", "jquery-archive-list-widget")
     }, {
       value: "current",
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Current or post date", "jalw")
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Current or post date", "jquery-archive-list-widget")
     }, {
       value: "current_post",
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Only post date", "jalw")
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Only post date", "jquery-archive-list-widget")
     }, {
       value: "current_date",
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Only current date", "jalw")
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Only current date", "jquery-archive-list-widget")
     }]
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
     type: "number",
     step: "1",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Hide years from before", "jalw"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Hide years from before", "jquery-archive-list-widget"),
     value: attributes.hide_from_year,
     onChange: val => setAttributes({
       hide_from_year: val
     }),
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Leave empty to show all years", "jalw")
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Leave empty to show all years", "jquery-archive-list-widget")
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Post type", "jalw"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Post type", "jquery-archive-list-widget"),
     value: attributes.expand,
     onChange: val => setAttributes({
       expand: val
     }),
     options: []
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Panel, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Extra options", "jalw"),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Extra options", "jquery-archive-list-widget"),
     initialOpen: false
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.CheckboxControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Show days inside month list", "jalw"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Show days inside month list", "jquery-archive-list-widget"),
     checked: attributes.show_day_archive,
     onChange: val => setAttributes({
       show_day_archive: val
     })
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.CheckboxControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Show number of posts", "jalw"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Show number of posts", "jquery-archive-list-widget"),
     checked: attributes.showcount,
     onChange: val => setAttributes({
       showcount: val
     })
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.CheckboxControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Show only posts from selected category in a category page", "jalw"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Show only posts from selected category in a category page", "jquery-archive-list-widget"),
     checked: attributes.onlycategory,
     onChange: val => setAttributes({
       onlycategory: val
     })
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.CheckboxControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Only expand / reduce by clicking the symbol", "jalw"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Only expand / reduce by clicking the symbol", "jquery-archive-list-widget"),
     checked: attributes.only_sym_link,
     onChange: val => setAttributes({
       only_sym_link: val
     })
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.CheckboxControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Only expand one at a the same time (accordion effect)", "jalw"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Only expand one at a the same time (accordion effect)", "jquery-archive-list-widget"),
     checked: attributes.accordion,
     onChange: val => setAttributes({
       accordion: val
     })
   })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Panel, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Display posts", "jalw"),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Display posts", "jquery-archive-list-widget"),
     initialOpen: false
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.CheckboxControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Show posts under months", "jalw"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Show posts under months", "jquery-archive-list-widget"),
     checked: attributes.showpost,
     onChange: val => setAttributes({
       showpost: val
     })
   })), attributes.showpost ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.CheckboxControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Show post date next to post title", "jalw"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Show post date next to post title", "jquery-archive-list-widget"),
     checked: attributes.show_post_date,
     onChange: val => setAttributes({
       show_post_date: val
     })
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Sort posts by", "jalw"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Sort posts by", "jquery-archive-list-widget"),
     value: attributes.sortpost,
     onChange: val => setAttributes({
       sortpost: val
     }),
     options: [{
       value: "id_asc",
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("ID (ASC)", "jalw")
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("ID (ASC)", "jquery-archive-list-widget")
     }, {
       value: "id_desc",
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("ID (DESC)", "jalw")
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("ID (DESC)", "jquery-archive-list-widget")
     }, {
       value: "name_asc",
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Name (ASC)", "jalw")
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Name (ASC)", "jquery-archive-list-widget")
     }, {
       value: "name_desc",
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Name (DESC)", "jalw")
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Name (DESC)", "jquery-archive-list-widget")
     }, {
       value: "date_asc",
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Date (ASC)", "jalw")
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Date (ASC)", "jquery-archive-list-widget")
     }, {
       value: "date_desc",
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Date (DESC)", "jalw")
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Date (DESC)", "jquery-archive-list-widget")
     }]
   }))) : null)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Panel, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Category management", "jalw"),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Category management", "jquery-archive-list-widget"),
     initialOpen: false
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.RadioControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Include or exclude", "jalw"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Include or exclude", "jquery-archive-list-widget"),
     selected: attributes.include_or_exclude,
     options: [{
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Include the following categories", "jalw"),
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Include the following categories", "jquery-archive-list-widget"),
       value: "include"
     }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Exclude the following categories ", "jalw"),
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Exclude the following categories ", "jquery-archive-list-widget"),
       value: "exclude"
     }],
     onChange: val => setAttributes({
